@@ -16,22 +16,19 @@ The models evaluated were:
 The models were evaluated using **accuracy, precision, recall, and F1 score**.
 
 ---
-
 ## Dataset
 
-The project uses the **UNSW-NB15 network intrusion detection dataset**, which contains network traffic records representing normal activity and multiple categories of attacks.
+This project uses the UNSW-NB15 network intrusion detection dataset.
 
-The dataset was preprocessed by:
+The dataset is not included in this repository. It can be obtained from the
+official UNSW-NB15 dataset page:
 
-- Removing unnecessary columns
-- Handling missing values
-- Removing duplicate records
-- Converting categorical features into numerical representations
-- Preparing the attack category as the multiclass target
+https://research.unsw.edu.au/projects/unsw-nb15-dataset
 
-The `id` and binary `label` columns were removed, while `attack_cat` was used as the classification target.
+After downloading the dataset used for this project, place the required CSV
+file in the project directory and name it:
 
-> **Dataset note:** The `intrusion.csv` file is included in this repository only if its redistribution is permitted. If the dataset is not included, it should be obtained separately and placed in the project directory before running the notebook.
+intrusion.csv
 
 ---
 
